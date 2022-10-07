@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>GChvibes</title>
+		<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+		<link rel="shortcut icon" type="image/png" href="./assets/icon.png" />
+		<link rel="stylesheet" href="./assets/milligram.min.css" />
+		<link rel="stylesheet" href="./assets/app.css" />
+	</head>
+	<body style="padding: 2rem">
+		<div id="app-logo">
+			<div id="logo">...</div>
+		</div>
+		<div id="app-body" class="loading">
+			<table style="display: table">
+				<tbody>
+					<tr>
+						<td colspan="2">
+							<select id="pack-list" class="custom-input mb-0" style="width: 100%; margin-right: 10px"></select>
+						</td>
+					</tr>
+					<tr>
+						<td style="width: 50%">Volume <span id="volume-value-display" style="font-weight: bold"></span></td>
+						<td style="width: 50%">
+							<input type="range" min="0" max="100" value="20" step="5" class="slider mb-0" id="volume" style="width: 100%" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="divider"></div>
+			<div style="color: #666; font-size: 12px; text-align: center">
+			<p>
+			Made with ❤ by <a href="https://whitewolf.su" class="open-in-browser">WhiteWolf Studio</a>
+			</p>
+				<p id="app-version" style="color: #b9b9b9">-</p>
+				<div id="no-update-available" class="">
+					You have the latest version.
+				</div>
+				<div id="update-available" class="hidden">
+					New version is available! (<span id="new-version">-</span>)
+					<div style="margin-top: 5px">
+						<a href="https://github.com/KwilzOne/GChvibes/releases" class="open-in-browser">Check it out</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
